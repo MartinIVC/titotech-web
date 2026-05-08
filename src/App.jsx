@@ -1,6 +1,10 @@
 import './App.css'
 import ServiceCard from './components/ServiceCard'
 import PerfilDesarrollador from './components/PerfilDesarrollador';
+import PropuestaValor from './components/PropuestaValor';
+
+import pcImg from './assets/pc_cleaning.avif';
+import tvBox from './assets/tv_box.avif'
 
 function App() {
   const serviciosDummy = [
@@ -20,6 +24,17 @@ function App() {
       <nav className='navbar'>
         <h1>TitoTech</h1>
       </nav>
+
+      <PropuestaValor
+        titulo="Expertos en hardware"
+        texto="Revivimos tu equipo con mantenimiento profundo."
+        imagen={pcImg}        
+        />
+      <PropuestaValor
+        titulo="Optimización de TV Box's"
+        texto="Expertos en optimización de TV Boxes Amlogic y Allwiner"
+        imagen={tvBox}
+        />
       <main>
         {serviciosDummy.map((servicio) => (
           <ServiceCard
