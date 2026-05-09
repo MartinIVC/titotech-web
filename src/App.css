@@ -127,7 +127,7 @@ body {
   line-height: 1.8;
 }
 
-.conteiner.perfil-centrado {
+.contenedor.perfil-centrado {
   display: flex;
   justify-content: center;
   padding: 80px 20px; 
